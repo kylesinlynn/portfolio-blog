@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+  {% if posts %}
+    {% for post in posts %}
+      <h1>{{ post.title }}</h1>
+      <p>{{ post.text }}</p>
+      <time>{{ post.created_date }}</time>
+    {% endfor %}
+  {% endif %}
+  </body>
+</html>
